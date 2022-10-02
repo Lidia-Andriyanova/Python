@@ -10,18 +10,18 @@ y = int(input('Введите координату Y точки: '))
 
 def coord_quarter(x, y):
     if x > 0 and y > 0:
-        return('1 четверть')
+        return '1 четверть'
     elif x < 0 and y > 0:
-        return ('2 четверть')
+        return '2 четверть'
     elif x < 0 and y < 0:
-        return ('3 четверть')
+        return '3 четверть'
     elif x > 0 and y < 0:
-        return ('4 четверть')
+        return '4 четверть'
     elif x == 0 and y != 0:
-        return ('точка лежит на оси X')
+        return 'точка лежит на оси X'
     elif x != 0 and y == 0:
-        return ('точка лежит на оси Y')
+        return 'точка лежит на оси Y'
     else:
-        return ('точка находится в начале координат')
+        return 'точка находится в начале координат'
 
 print(f'x = {x}; y = {y} -> {coord_quarter(x, y)}')

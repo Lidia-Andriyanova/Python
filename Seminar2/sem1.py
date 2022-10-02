@@ -6,7 +6,7 @@
 num = int(input('Введите число: '))
 
 def print_sequence(num):
-    res = 1;
+    res = 1
     print(res, end='')
     for i in range(num - 1):
         res *= -3

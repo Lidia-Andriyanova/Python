@@ -8,11 +8,11 @@ day = int(input('Введите день недели: '))
 
 def day_week(num):
     if 1 <= num <= 5:
-        return('нет')
+        return 'нет'
     elif 6 <= num <= 7:
-        return ('да')
+        return 'да'
     else:
-        return ('не явяляется днем недели')
+        return 'не является днем недели'
 
 print(f'{day} -> {day_week(day)}')
 
