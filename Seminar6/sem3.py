@@ -1,10 +1,10 @@
 # Составить словарь слов из файда jack.txt
 from pprint import pprint
 
-with open('jack.txt', 'r') as file_info:
+with open('jack.txt', 'r', encoding='utf-8') as file_info:
     jack_str = file_info.read()
 
-jack_list = jack_str.lower().split()
+jack_list = jack_str.lower().replace('\ufeff', '').split()
 
 jack_list = list(filter(lambda elem: elem not in [',', '.'], jack_list))
 
